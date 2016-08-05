@@ -13,7 +13,8 @@ Lembrar tambem de criar esse arquivo no caminho:
 
 Em seguida voce devera executar:
 ```
-    a2enmod http_proxy
+    a2enmod proxy
+    a2enmod proxy_http
     a2ensite portal.conf
     service apache2 restart
 ```
