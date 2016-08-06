@@ -12,47 +12,47 @@ class Pagina
     /**
      * @Id
      * @GeneratedValue(strategy="AUTO")
-     * @Column(type="integer", name="Id")
+     * @Column(type="integer", name="id")
      */
-    public $Id;
+    public $id;
     
     /**
-     * @Column(type="string", nullable=false, name="Titulo")
+     * @Column(type="string", nullable=false, name="titulo")
      */
-    public $Titulo;
+    public $titulo;
     
     /**
-     * @Column(type="string", nullable=false, name="Corpo")
+     * @Column(type="text", nullable=false, name="corpo")
      */
-    public $Corpo;
+    public $corpo;
     
     /**
-     * @Column(type="integer", nullable=false, name="Posicao")
+     * @Column(type="interger", nullable=false, name="posicao")
      */
-    public $Posicao;
+    public $posicao;
     
     /**
      * @Column(type="datetime", nullable=false, name="DataHoraUpdate")
      */
-    public $DataHoraUpdate;
+    public $dataHoraUpdate;
     
     public function getIDPagina() 
     {
-        return $this->Id; 
+        return $this->id; 
     }
     
     public function getTituloPagina()
     {
-        return $this->Titulo; 
+        return $this->titulo; 
     }
     
     public function getPosicaoPagina()
     {
-        return $this->Posicao; 
+        return $this->posicao; 
     }
     
     public function getDataHoraUpdate()
     {
-        return $this->DataHoraUpdate;
+        return $this->dataHoraUpdate;
     }
 }
